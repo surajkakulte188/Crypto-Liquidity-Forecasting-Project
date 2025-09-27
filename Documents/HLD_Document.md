@@ -1,8 +1,8 @@
 # High-Level Design (HLD) - Cryptocurrency Liquidity Prediction System
 
-## Document version
+## Document Version
 - Project: Cryptocurrency Liquidity Prediction for Market Stability
-- Prepared for: Suraj R Kakulte
+- Prepared By: Suraj R Kakulte
 - Date: September 27, 2025
 - Version: 1.0
 
