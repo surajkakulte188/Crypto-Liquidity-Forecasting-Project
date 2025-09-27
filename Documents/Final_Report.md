@@ -68,7 +68,7 @@ crypto-liquidity-forecasting/
 - Run notebooks in order: data prep → EDA → FE → modeling → evaluation
 - Best model serialized at `artifacts/models/RidgeCV_logtarget.joblib`
 - App start: `python app.py` → http://127.0.0.1:5000/
-- 
+
 ## 7. Conclusion
 **The project demonstrates:**
 - Accurate prediction of crypto liquidity using XGBoost.
