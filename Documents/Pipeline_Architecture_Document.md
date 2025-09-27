@@ -48,7 +48,7 @@ flowchart LR
     E --> G["Flask Inference (app.py)"]
     G --> H["Web UI\n(templates + static)"]
 ```
-## 4. Folder Structure of Pipeline
+## 4. Folder Structure (Repository Layout)
 ```
 crypto_liquidity_project/
 ├── data/
