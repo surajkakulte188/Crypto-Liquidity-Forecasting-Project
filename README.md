@@ -5,25 +5,35 @@ This project predicts cryptocurrency liquidity using historical trading data. It
 
 ## Folder Structure
 ```
-crypto-liquidity-forecasting/
-├── config.py
+crypto_liquidity_project/
 ├── data/
-│   └── raw/
+│   ├── raw/                          # CoinGecko CSVs (input)
+│   └── processed/
+│       ├── merged_coin_gecko.csv
+│       └── engineered_features_lag.csv
+├── notebooks/
+│   ├── data_preparation.ipynb
+│   ├── eda.ipynb
+│   ├── feature_engineering.ipynb
+│   ├── modeling.ipynb
+│   └── evaluation_testing.ipynb
 ├── artifacts/
 │   ├── models/
+│   │   └── RidgeCV_logtarget.joblib  # best model (log-target)
 │   └── metrics/
-├── src/
-│   ├── data_loader.py
-│   ├── preprocessing.py
-│   ├── feature_engineering.py
-│   ├── modeling.py
-│   ├── evaluation.py
-│   └── model_export.py
-├── app.py
+│       └── results.csv               # model comparison
 ├── templates/
+│   └── index.html                    # Flask UI (minimal inputs)
 ├── static/
-├── ui_screenshots/
-└── README.md
+│   └── style.css                     # modern glass UI
+├── app.py                            # Flask server (inference)
+├── docs/
+│   ├── HLD.md
+│   ├── LLD.md
+│   └── PIPELINE_ARCHITECTURE.md
+└── reports/
+    ├── EDA_REPORT.md
+    └── FINAL_REPORT.md
 ```
 
 ## Config File
