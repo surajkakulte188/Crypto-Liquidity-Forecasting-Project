@@ -109,6 +109,13 @@ Responsibilities:
 
 ## 5. Data Flow Diagram
 
+# Crypto Liquidity Prediction Project
+
+## Data Flow Diagram
+
+This diagram shows the flow of data and processing in the project.
+
+```mermaid
 flowchart LR
     A["Raw CSVs (data/raw)"] --> B["Preprocess & Merge\n(clean + label)"]
     B --> C["Feature Engineering\n(MAs, lags, returns, logs)"]
@@ -118,6 +125,7 @@ flowchart LR
     E --> G["Flask Inference (app.py)"]
     G --> H["Web UI\n(templates + static)"]
 
+```
 ## 6. Technology Stack (recommended)
 Language: Python 3.9+
 Data: pandas, numpy
