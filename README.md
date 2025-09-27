@@ -103,8 +103,8 @@ sequenceDiagram
 <img src="Web_Application_UI/1. Project_Homepage.png" alt="Home Page"/>
 
 ### Data Inserting Page
-<img src="Web_Application_UI/2. Data_Uploading.png" alt="Data Uploading Page"/>
-
+<img src="Web_Application_UI/2. Data_Uploading_UI.png" alt="Data Uploading Page"/>
+Web_Application_UI/2. Data_Uploading_UI.png
 ### Data Visualization Page
 <img src="Web_Application_UI/3. EDA_Visualization.png" alt="Data Visualization Page"/>
 
