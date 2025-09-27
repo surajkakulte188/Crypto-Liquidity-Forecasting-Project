@@ -46,7 +46,8 @@ Best Model: XGBoost
   
 ## 5. Folder Structure
 
-```crypto-liquidity-forecasting/
+```
+crypto-liquidity-forecasting/
 │
 ├── data/
 │   └── raw/                  # Raw CSV files
@@ -64,7 +65,6 @@ Best Model: XGBoost
 ├── templates/                # HTML templates
 └── static/                   # CSS/JS files
 ```
-
 ## 6. Reproducibility
 - Run notebooks in order: data prep → EDA → FE → modeling → evaluation
 - Best model serialized at `artifacts/models/RidgeCV_logtarget.joblib`
