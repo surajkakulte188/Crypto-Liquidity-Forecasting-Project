@@ -11,7 +11,8 @@ liquidity_ratio = 24h_volume / mkt_cap
 
 ---
 ![Prediction Page]
-<img src="Web_Application_UI/4. Prediction_Result.png" alt="Home Page" width="600"/>
+
+<img src="Web_Application_UI/4. Prediction_Result.png" alt="Home Page"/>
 
 ![Alt Text](Web_Application_UI/5. Final_Output.png)
 
