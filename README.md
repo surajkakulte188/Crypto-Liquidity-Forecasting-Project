@@ -3,6 +3,16 @@
 ## Overview
 This project predicts cryptocurrency liquidity using historical trading data. It includes an end-to-end pipeline with preprocessing, feature engineering, model training, evaluation, and deployment via a Flask web interface.
 
+## Table of Contents
+- [Project Overview](#project-overview)
+- [Folder Structure](#folder-structure)
+- [Config File](#config-file)
+- [Pipeline Overview](#pipeline-overview)
+- [UI Screenshots](#ui-screenshots)
+- [How to Run](#how-to-run)
+- [Notes](#notes)
+- [References](#references)
+
 ## Folder Structure
 ```
 crypto_liquidity_project/
