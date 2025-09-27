@@ -68,17 +68,16 @@ flowchart LR
 <img src="Web_Application_UI/1. Project_Homepage.png)" alt="Home Page"/>
 
 ### Data Inserting Page
-![Prediction Page](Web_Application_UI/2. Data_Uploading.png)
-<img src="Web_Application_UI/2. Data_Uploading.png" alt="Home Page" width="600"/>
+<img src="Web_Application_UI/2. Data_Uploading.png" alt="Data Uploading Page"/>
 
 ### Data Visualization Page
-![Metrics Page](Web_Application_UI/3. EDA_Visualization.png)
+<img src="Web_Application_UI/3. EDA_Visualization.png" alt="Data Visualization Page"/>
 
 ### Prediction UI
-![UI Screenshot 1](Web_Application_UI/4. Prediction_Result.png)
+<img src="Web_Application_UI/4. Prediction_Result.png" alt="Result Prediction"/>
 
 ### Final Output UI
-![UI Screenshot 2](Web_Application_UI/5. Final_Output.png)
+<img src="Web_Application_UI/5. Final_Output.png" alt="Prediction Outcomes"/>
 
 ## How to Run
 1. Install dependencies:
