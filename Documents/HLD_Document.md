@@ -115,10 +115,6 @@ Responsibilities:
 
 ## 5. Data Flow Diagram
 
-# Crypto Liquidity Prediction Project
-
-## Data Flow Diagram
-
 ```mermaid
 flowchart LR
     A["Raw CSVs (data/raw)"] --> B["Preprocess & Merge\n(clean + label)"]
