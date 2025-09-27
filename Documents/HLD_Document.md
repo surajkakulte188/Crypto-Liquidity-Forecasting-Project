@@ -108,6 +108,7 @@ Responsibilities:
 - Use requirements.txt or environment.yml for reproducibility.
 
 ## 5. Data Flow Diagram
+
 flowchart LR
     A["Raw CSVs (data/raw)"] --> B["Preprocess & Merge\n(clean + label)"]
     B --> C["Feature Engineering\n(MAs, lags, returns, logs)"]
@@ -134,3 +135,21 @@ Version Control / Repo: GitHub (include README + docs)
 - Reliability: Save model and data artifacts with timestamps and checksums.
 - Security: No PII; secure storage of any API keys (not in repo; use env vars).
 - Usability: Simple UI with upload, run, and visualization options
+
+## 8. Deployment & Delivery options
+**Local / Portfolio (quick):**
+Use Streamlit: easier to deploy on Streamlit Cloud or Hugging Face Spaces. Provide streamlit_app.py, requirements.txt.
+
+**Containerized deployment (professional):**
+Dockerfile: base python image, install requirements.txt, expose port, run app. Host on Render/Heroku/AWS Elastic Beanstalk.
+
+## 9. Testing & validation plan
+- Unit tests: small tests for data preprocessing functions (missing handling, scaling).
+- Integration tests: run preprocessing → feature engineering → single prediction end-to-end.
+- Model tests: check model prediction range, avoid NaNs.
+- UI tests: sanity checks for upload and display flows.
+
+## 10. Monitoring & maintenance
+- Errors & exceptions: capture stack traces, notify via email (manual) or log files.
+- Model drift checks: periodically retrain (monthly or when new data available) and compare performance.
+- Reproducibility: keep training notebooks and seed values documented.
