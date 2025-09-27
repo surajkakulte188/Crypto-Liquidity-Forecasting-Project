@@ -46,7 +46,7 @@ Best Model: XGBoost
   
 ## 5. Folder Structure
 
-crypto-liquidity-forecasting/
+```crypto-liquidity-forecasting/
 │
 ├── data/
 │   └── raw/                  # Raw CSV files
@@ -63,6 +63,7 @@ crypto-liquidity-forecasting/
 │   └── model_export.py
 ├── templates/                # HTML templates
 └── static/                   # CSS/JS files
+```
 
 ## 6. Reproducibility
 - Run notebooks in order: data prep → EDA → FE → modeling → evaluation
