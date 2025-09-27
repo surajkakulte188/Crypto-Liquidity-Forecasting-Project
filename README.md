@@ -11,6 +11,7 @@ liquidity_ratio = 24h_volume / mkt_cap
 
 ---
 ![Project Screenshot](Web_Application_UI/4. Prediction_Result.png)
+
 ![Project Screenshot](Web_Application_UI/5. Final_Output.png)
 
 
