@@ -1,4 +1,4 @@
-# High-Level Design (HLD) — Cryptocurrency Liquidity Prediction System
+# High-Level Design (HLD) - Cryptocurrency Liquidity Prediction System
 
 ## Document version
 - Project: Cryptocurrency Liquidity Prediction for Market Stability
