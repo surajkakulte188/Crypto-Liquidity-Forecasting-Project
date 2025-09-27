@@ -24,10 +24,12 @@
 - Mean daily trading volume showed high variability across periods
 - Volatility (measured as standard deviation of returns) was strongly correlated with liquidity dips
 - High trading volume days typically corresponded to higher liquidity levels
+
 4.2 Correlation Analysis
 - Trading Volume and Liquidity: Strong positive correlation
 - Price Volatility and Liquidity: Negative correlation (higher volatility often reduces liquidity)
 - Market Cap and Liquidity: Moderate positive correlation
+
 4.3 Visual Trends
 Several plots were generated to analyze trends:
 - Time-series plots of trading volume, liquidity ratios, and volatility
