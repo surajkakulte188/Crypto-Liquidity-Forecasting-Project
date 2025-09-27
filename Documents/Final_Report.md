@@ -1,7 +1,7 @@
 # Final Report - Cryptocurrency Liquidity Prediction System
 
 ## Document Version
-- Project: Crypto Liquidity Forecasting
+- Project: Crypto Liquidity Prediction for Market Stability
 - Prepared By: Suraj R. Kakulte
 - Date: September 27, 2025
 - Version: 1.0
@@ -20,6 +20,16 @@ The system implements an end-to-end pipeline from raw data ingestion to model de
 
 ## 3. Pipeline Architecture
 
+```mermaid
+flowchart LR
+    A["Raw CSVs (data/raw)"] --> B["Preprocess & Merge\n(clean + label)"]
+    B --> C["Feature Engineering\n(MAs, lags, returns, logs)"]
+    C --> D["Modeling & Selection\n(log-target)"]
+    D --> E["Export Best Model\n(artifacts/models)"]
+    C --> F["Evaluation & Plots\n(artifacts/metrics)"]
+    E --> G["Flask Inference (app.py)"]
+    G --> H["Web UI\n(templates + static)"]
+```
 
 ## 4. Results
 **4.1 Model Performance:**
