@@ -113,8 +113,6 @@ Responsibilities:
 
 ## Data Flow Diagram
 
-This diagram shows the flow of data and processing in the project.
-
 ```mermaid
 flowchart LR
     A["Raw CSVs (data/raw)"] --> B["Preprocess & Merge\n(clean + label)"]
@@ -124,8 +122,8 @@ flowchart LR
     C --> F["Evaluation & Plots\n(artifacts/metrics)"]
     E --> G["Flask Inference (app.py)"]
     G --> H["Web UI\n(templates + static)"]
-
 ```
+
 ## 6. Technology Stack (recommended)
 Language: Python 3.9+
 Data: pandas, numpy
