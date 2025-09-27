@@ -1,6 +1,6 @@
 # Cryptocurrency Liquidity — Exploratory Data Analysis (EDA) Report
 
-## Introduction 
+## - Introduction 
 - This Exploratory Data Analysis (EDA) was performed on cryptocurrency market data to understand liquidity patterns and their relation to market stability. The dataset includes historical price, trading volume, and other market factor
 
 ## Dataset
