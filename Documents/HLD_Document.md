@@ -109,14 +109,15 @@ Responsibilities:
 
 ## 5. Data Flow Diagram
 
+```mermaid
 flowchart LR
-    A["Raw CSVs (data/raw)"] --> B["Preprocess & Merge\n(clean + label)"]
-    B --> C["Feature Engineering\n(MAs, lags, returns, logs)"]
-    C --> D["Modeling & Selection\n(log-target)"]
-    D --> E["Export Best Model\n(artifacts/models)"]
-    C --> F["Evaluation & Plots\n(artifacts/metrics)"]
+    A["Raw CSVs (data/raw)"] --> B["Preprocess & Merge<br>(clean + label)"]
+    B --> C["Feature Engineering<br>(MAs, lags, returns, logs)"]
+    C --> D["Modeling & Selection<br>(log-target)"]
+    D --> E["Export Best Model<br>(artifacts/models)"]
+    C --> F["Evaluation & Plots<br>(artifacts/metrics)"]
     E --> G["Flask Inference (app.py)"]
-    G --> H["Web UI\n(templates + static)"]
+    G --> H["Web UI<br>(templates + static)"]
 
 ## 6. Technology Stack (recommended)
 Language: Python 3.9+
