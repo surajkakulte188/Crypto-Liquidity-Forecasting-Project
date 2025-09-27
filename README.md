@@ -100,18 +100,9 @@ sequenceDiagram
 
 ## UI Screenshots
 ### Home Page
-<img src="Web_Application_UI/1. Project_Homepage.png" alt="Home Page"/>
+<img src="Web_Application_UI/2. Data_Uploading_UI.png" alt="Home Page"/>
 
-### Data Inserting Page
-<img src="Web_Application_UI/2. Data_Uploading_UI.png" alt="Data Uploading Page"/>
-Web_Application_UI/2. Data_Uploading_UI.png
-### Data Visualization Page
-<img src="Web_Application_UI/3. EDA_Visualization.png" alt="Data Visualization Page"/>
-
-### Prediction UI
-<img src="Web_Application_UI/4. Prediction_Result.png" alt="Result Prediction"/>
-
-### Final Output UI
+### Prediction Outcome UI
 <img src="Web_Application_UI/5. Final_Output.png" alt="Prediction Outcomes"/>
 
 ## How to Run
