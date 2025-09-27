@@ -100,7 +100,7 @@ sequenceDiagram
 
 ## UI Screenshots
 ### Home Page
-<img src="Web_Application_UI/1. Project_Homepage.png)" alt="Home Page"/>
+<img src="Web_Application_UI/1. Project_Homepage.png" alt="Home Page"/>
 
 ### Data Inserting Page
 <img src="Web_Application_UI/2. Data_Uploading.png" alt="Data Uploading Page"/>
