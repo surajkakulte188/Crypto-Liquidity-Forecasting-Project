@@ -1,7 +1,7 @@
-# Cryptocurrency Liquidity Prediction System
+# Crypto Liquidity Forecasting
 
-## Overview
-This project predicts cryptocurrency liquidity using historical trading data. It includes an end-to-end pipeline with preprocessing, feature engineering, model training, evaluation, and deployment via a Flask web interface.
+## Project Overview
+This project predicts cryptocurrency liquidity using historical trading data. It includes an end-to-end pipeline: data preprocessing, feature engineering, model training, evaluation, and deployment via a Flask web interface.
 
 ## Table of Contents
 - [Project Overview](#project-overview)
@@ -14,6 +14,7 @@ This project predicts cryptocurrency liquidity using historical trading data. It
 - [References](#references)
 
 ## Folder Structure
+
 ```
 crypto_liquidity_project/
 ├── data/
