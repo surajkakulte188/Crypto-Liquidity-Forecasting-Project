@@ -65,12 +65,11 @@ flowchart LR
 
 ## UI Screenshots
 ### Home Page
-
-
-<img src="Web_Application_UI/1. Project_Homepage.png)" alt="Project Home Page" width=600/>
+<img src="Web_Application_UI/1. Project_Homepage.png)" alt="Home Page"/>
 
 ### Data Inserting Page
 ![Prediction Page](Web_Application_UI/2. Data_Uploading.png)
+<img src="Web_Application_UI/2. Data_Uploading.png" alt="Home Page" width="600"/>
 
 ### Data Visualization Page
 ![Metrics Page](Web_Application_UI/3. EDA_Visualization.png)
