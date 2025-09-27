@@ -1,1 +1,105 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <title>Crypto Liquidity Predictor</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <link rel="stylesheet" href="/static/style.css"/>
+</head>
+<body>
+  <div class="bg"></div>
+  <main class="container">
+    <header class="header">
+      <div class="title">
+        <h1>Crypto Liquidity Predictor</h1>
+        <p>Forecast the liquidity ratio from a few key inputs.</p>
+      </div>
+    </header>
 
+    <section class="card">
+      <form method="POST" action="/predict" class="form-grid">
+        <h2 class="section-title">Core Inputs</h2>
+        <div class="grid">
+          <div class="field">
+            <label>Price</label>
+            <input name="price" type="number" step="any" placeholder="e.g., 40859.46" required/>
+          </div>
+          <div class="field">
+            <label>1h Change</label>
+            <input name="h1" type="number" step="any" placeholder="e.g., 0.022" required/>
+          </div>
+          <div class="field">
+            <label>24h Change</label>
+            <input name="h24" type="number" step="any" placeholder="e.g., 0.030" required/>
+          </div>
+          <div class="field">
+            <label>7d Change</label>
+            <input name="d7" type="number" step="any" placeholder="e.g., 0.055" required/>
+          </div>
+          <div class="field">
+            <label>24h Volume</label>
+            <input name="vol24h" type="number" step="any" placeholder="e.g., 35390760000" required/>
+          </div>
+          <div class="field">
+            <label>Market Cap</label>
+            <input name="mcap" type="number" step="any" placeholder="e.g., 770991500000" required/>
+          </div>
+        </div>
+
+        <details class="details">
+          <summary>Optional: Previous-day values (improves accuracy)</summary>
+          <div class="grid">
+            <div class="field">
+              <label>Prev Price</label>
+              <input name="price_prev" type="number" step="any" placeholder="e.g., 40500"/>
+            </div>
+            <div class="field">
+              <label>Prev 24h Volume</label>
+              <input name="vol24h_prev" type="number" step="any" placeholder="e.g., 34000000000"/>
+            </div>
+            <div class="field">
+              <label>Prev Market Cap</label>
+              <input name="mcap_prev" type="number" step="any" placeholder="e.g., 790000000000"/>
+            </div>
+          </div>
+          <p class="hint">If left blank, the app assumes no prior-day history and still predicts safely.</p>
+        </details>
+
+        <button class="btn" type="submit">Predict Liquidity</button>
+      </form>
+    </section>
+
+    {% if error %}
+      <section class="card error">
+        <p><strong>Error:</strong> {{ error }}</p>
+      </section>
+    {% endif %}
+
+    {% if result %}
+      <section class="card result">
+        <div class="result-head">
+          <span class="badge {{ result.color }}">{{ result.label }}</span>
+          <h2>Predicted Liquidity Ratio</h2>
+          <div class="number">{{ "%.6f"|format(result.pred) }}</div>
+        </div>
+        <div class="progress-wrap">
+          <div class="progress">
+            <div class="bar" style="width: {{ [100, (result.pred*100)] | min | round(1) }}%"></div>
+          </div>
+          <div class="ticks">
+            <span>0.00</span><span>0.10</span><span>0.40</span><span>1.00+</span>
+          </div>
+        </div>
+        <p class="tip">{{ result.tip }}</p>
+        <div class="notes">
+          <p><strong>How to read:</strong> Liquidity ratio ≈ <code>24h_volume / mkt_cap</code>. Higher means easier execution, tighter spreads.</p>
+        </div>
+      </section>
+    {% endif %}
+
+    <footer class="footer">
+      <p>Built with Flask · RidgeCV model (log-target) · Glass UI</p>
+    </footer>
+  </main>
+</body>
+</html>
