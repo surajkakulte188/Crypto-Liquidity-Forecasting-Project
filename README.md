@@ -129,7 +129,7 @@ python app.py
 
 ## ✅ Submission Checklist
 
-- [] Source code (notebooks, `app.py`, templates, CSS, artifacts)
+- [ ] Source code (notebooks, `app.py`, templates, CSS, artifacts)
 - [ ] EDA Report
 - [ ] HLD & LLD
 - [ ] Pipeline Architecture
