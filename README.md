@@ -129,7 +129,7 @@ python app.py
 
 ## ✅ Submission Checklist
 
-- [ ] Source code (notebooks, `app.py`, templates, CSS, artifacts)
+- [] Source code (notebooks, `app.py`, templates, CSS, artifacts)
 - [ ] EDA Report
 - [ ] HLD & LLD
 - [ ] Pipeline Architecture
@@ -140,6 +140,7 @@ python app.py
 ## Notes
 - Keep sensitive credentials out of `config.py`; use `.env` if needed.
 - All artifacts (models, metrics) are stored in `artifacts/`.
+- Ensure all raw CSV files are placed in data/raw/.
 
 ## References
 - scikit-learn, XGBoost, pandas, Flask documentation
