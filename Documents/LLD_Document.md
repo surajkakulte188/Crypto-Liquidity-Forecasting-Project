@@ -19,6 +19,7 @@ Predict cryptocurrency liquidity using historical market and trading data, and d
 
 ## 3. Module-Wise Design
 **3.1 Data Loader Module:**
+
 Purpose: Load all raw CSVs for further processing.
 
 Functions:
@@ -28,6 +29,7 @@ Functions:
 Data Structures: pandas.DataFrame
 
 **3.2 Preprocessing Module:**
+
 Purpose: Clean, merge, and label the data.
 Functions:
 - clean_data(df) → Handles missing data, duplicates, and outliers
@@ -36,6 +38,7 @@ Functions:
 Data Structures: DataFrame with labeled and cleaned data
 
 **3.3 Feature Engineering Module:**
+
 Purpose: Transform raw data into model-ready features.
 Functions:
 - compute_moving_averages(df, windows)
@@ -46,6 +49,7 @@ Functions:
 Data Structures: DataFrame with numeric arrays for each feature
 
 **3.4 Modeling Module:**
+
 Purpose: Train predictive models and select the best-performing one.
 Functions:
 - train_model(X_train, y_train, model_type)
@@ -57,6 +61,7 @@ Algorithms:
 - Metrics: RMSE, MAE, R²
 
 **3.5 Evaluation Module:**
+
 Purpose: Generate metrics and plots to evaluate model performance.
 Functions:
 - plot_metrics(metrics_dict) → Save visualizations
@@ -65,12 +70,14 @@ Functions:
 Data Structures: Dictionary of metrics and Matplotlib/Seaborn plots
 
 **3.6 Model Export Module:**
+
 Purpose: Save the trained model for inference.
 Functions:
 - save_model(model, path) → Stores .pkl or .joblib
 - load_model(path) → Loads the saved model for Flask inference
 
 **3.7 Flask Inference Module:**
+
 Purpose: Serve predictions through an API.
 Endpoints:
 - /predict → Input: JSON of features, Output: predicted liquidity
@@ -80,6 +87,7 @@ Functions:
 - predict(input_json) → Returns prediction
 
 **3.8 Web UI Module:**
+
 Purpose: Provide an interface to interact with the model.
 Components:
 - templates/ → HTML forms and output display
