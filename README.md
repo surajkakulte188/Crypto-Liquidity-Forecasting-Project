@@ -65,6 +65,7 @@ flowchart LR
 
 ## UI Screenshots
 ### Home Page
+
 <img src="Web_Application_UI/1. Project_Homepage.png)" alt="Home Page"/>
 
 ### Data Inserting Page
