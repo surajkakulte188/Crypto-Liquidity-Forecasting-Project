@@ -2,7 +2,7 @@
 
 ## Document Version
 - Project: Cryptocurrency Liquidity Prediction for Market Stability
-- Prepared By: Suraj R Kakulte
+- Prepared By: Suraj R. Kakulte
 - Date: September 27, 2025
 - Version: 1.0
 
