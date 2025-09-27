@@ -1,10 +1,48 @@
+# Byte-compiled / optimized / DLL files
 __pycache__/
-*.pyc
+*.py[cod]
+*$py.class
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Virtual environment
+venv/
+env/
+ENV/
 .venv/
+
+# Python Environment files
+*.env
 .env
+
+# Jupyter Notebook checkpoints
 .ipynb_checkpoints/
-data/interim/
-data/processed/*.parquet
-artifacts/
+
+# Data files (raw, processed, or large CSVs)
+data/raw/
+data/processed/
+
+# Model artifacts
+artifacts/models/
+artifacts/metrics/
+
+# Logs
+*.log
+
+# System files
 .DS_Store
 Thumbs.db
+
+# IDEs
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Misc
+*.sqlite
+*.db
