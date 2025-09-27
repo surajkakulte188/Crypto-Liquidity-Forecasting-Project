@@ -10,7 +10,7 @@ liquidity_ratio = 24h_volume / mkt_cap
 > Higher ⇒ generally easier execution (tighter spreads, lower slippage).
 
 ---
-![Project Screenshot]Web_Application_UI/4. Prediction_Result.png
+![Project Screenshot](Web_Application_UI/4. Prediction_Result.png)
 ![Project Screenshot](ProjectUI/img3.png)
 
 
