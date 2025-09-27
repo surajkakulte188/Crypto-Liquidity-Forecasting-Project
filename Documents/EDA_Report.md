@@ -13,7 +13,7 @@
 - Processed Files: Engineered features, lag features, and merged datasets
 
 ## 3. Data Cleaning & Preprocessing
-- The following preprocessing steps were applied:
+- **The following preprocessing steps were applied:**
 1. Handling missing values using interpolation and forward filling
 2. Removing duplicate rows and ensuring timestamp consistency
 3. Normalizing numerical features using MinMaxScaler
