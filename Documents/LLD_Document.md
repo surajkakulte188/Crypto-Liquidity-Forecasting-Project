@@ -1,4 +1,4 @@
-# Low-Level Design (LLD) Document
+# Low-Level Design (LLD) Document - Cryptocurrency Liquidity Prediction System
 
 ## Document Version
 - Project Name: Cryptocurrency Liquidity Prediction for Market Stability
