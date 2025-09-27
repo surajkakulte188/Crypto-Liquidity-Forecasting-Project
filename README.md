@@ -1,4 +1,4 @@
-# Crypto Liquidity Prediction System
+# Cryptocurrency Liquidity Prediction System
 
 ## Overview
 This project predicts cryptocurrency liquidity using historical trading data. It includes an end-to-end pipeline with preprocessing, feature engineering, model training, evaluation, and deployment via a Flask web interface.
@@ -72,6 +72,20 @@ flowchart LR
     E --> G["Flask Inference (app.py)"]
     G --> H["Web UI\n(templates + static)"]
 ```
+## Orchestration (sequence)
+```mermaid
+sequenceDiagram
+  participant NB as Notebooks
+  participant DS as data/processed
+  participant AR as artifacts
+  participant SV as Flask
+  NB->>DS: merged_coin_gecko.csv
+  NB->>DS: engineered_features_lag.csv
+  NB->>AR: results.csv + RidgeCV_logtarget.joblib
+  SV->>AR: Load model
+  SV->>SV: Derive features → predict (expm1)
+  SV-->>User: Liquidity ratio + label
+```
 
 ## UI Screenshots
 ### Home Page
@@ -101,6 +115,16 @@ pip install -r requirements.txt
 python app.py
 ```
 5. Access Web UI at `http://127.0.0.1:5000`
+
+## ✅ Submission Checklist
+
+- [ ] Source code (notebooks, `app.py`, templates, CSS, artifacts)
+- [ ] EDA Report
+- [ ] HLD & LLD
+- [ ] Pipeline Architecture
+- [ ] Final Report
+- [ ] Best model (`artifacts/models/*.joblib`) + metrics CSV
+- [ ] Processed data CSVs (`data/processed/*.csv`)
 
 ## Notes
 - Keep sensitive credentials out of `config.py`; use `.env` if needed.
