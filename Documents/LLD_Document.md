@@ -93,3 +93,29 @@ Components:
 - templates/ → HTML forms and output display
 - static/ → CSS/JS for UI
 - Form submissions trigger Flask endpoints to return predictions
+
+## 4. Data Flow Diagram:
+
+```mermaid
+flowchart LR
+    A["Raw CSVs (data/raw)"] --> B["Preprocess & Merge\n(clean + label)"]
+    B --> C["Feature Engineering\n(MAs, lags, returns, logs)"]
+    C --> D["Modeling & Selection\n(log-target)"]
+    D --> E["Export Best Model\n(artifacts/models)"]
+    C --> F["Evaluation & Plots\n(artifacts/metrics)"]
+    E --> G["Flask Inference (app.py)"]
+    G --> H["Web UI\n(templates + static)"]
+```
+
+## 5. Libraries & Dependencies
+- pandas, numpy → Data handling
+- scikit-learn, xgboost → Modeling
+- matplotlib, seaborn → Plots & visualizations
+- Flask → Web app
+- joblib → Model serialization
+
+## 6. Implementation Notes
+- Modular structure: Each module in src/ handles a specific step.
+- All configurations (like model parameters) in a config file or .env.
+- Logging and error handling in Flask app for API requests.
+- Ensure reproducibility by fixing random seeds in modeling.
