@@ -20,9 +20,11 @@ Predict cryptocurrency liquidity using historical market and trading data, and d
 ## 3. Module-Wise Design
 **3.1 Data Loader Module:**
 Purpose: Load all raw CSVs for further processing.
+
 Functions:
 - load_csv(file_path: str) -> pd.DataFrame
 - load_all_csv(folder_path: str) -> pd.DataFrame
+
 Data Structures: pandas.DataFrame
 
 **3.2 Preprocessing Module:**
@@ -30,6 +32,7 @@ Purpose: Clean, merge, and label the data.
 Functions:
 - clean_data(df) → Handles missing data, duplicates, and outliers
 - label_data(df) → Generates the target variable (e.g., log-target or liquidity class)
+
 Data Structures: DataFrame with labeled and cleaned data
 
 **3.3 Feature Engineering Module:**
@@ -39,6 +42,7 @@ Functions:
 - compute_lag_features(df, lags)
 - compute_returns(df)
 - compute_log_transform(df, cols)
+
 Data Structures: DataFrame with numeric arrays for each feature
 
 **3.4 Modeling Module:**
@@ -47,6 +51,7 @@ Functions:
 - train_model(X_train, y_train, model_type)
 - evaluate_model(model, X_test, y_test)
 - select_best_model(models)
+
 Algorithms:
 - Regression models: Linear Regression, Random Forest, XGBoost
 - Metrics: RMSE, MAE, R²
@@ -56,6 +61,7 @@ Purpose: Generate metrics and plots to evaluate model performance.
 Functions:
 - plot_metrics(metrics_dict) → Save visualizations
 - save_metrics(output_dir) → Save metrics in artifacts/metrics/
+
 Data Structures: Dictionary of metrics and Matplotlib/Seaborn plots
 
 **3.6 Model Export Module:**
@@ -69,6 +75,7 @@ Purpose: Serve predictions through an API.
 Endpoints:
 - /predict → Input: JSON of features, Output: predicted liquidity
 - /health → API status check
+
 Functions:
 - predict(input_json) → Returns prediction
 
