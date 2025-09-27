@@ -10,7 +10,7 @@ liquidity_ratio = 24h_volume / mkt_cap
 > Higher ⇒ generally easier execution (tighter spreads, lower slippage).
 
 ---
-![Project Screenshot]https://github.com/surajkakulte188/Crypto-Liquidity-Forecasting-Project/blob/main/Web_Application_UI/4.%20Prediction_Result.png
+![Project Screenshot]Web_Application_UI/4. Prediction_Result.png
 ![Project Screenshot](ProjectUI/img3.png)
 
 
