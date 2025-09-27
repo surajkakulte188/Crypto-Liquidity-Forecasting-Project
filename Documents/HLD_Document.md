@@ -59,12 +59,14 @@ This High-Level Design (HLD) describes the architecture, components, data flows,
 
 ## 4. Component-level responsibilities
 **4.1 Data Collector:**
+
 Input: CSVs from CoinGecko / exported historical files.
 Responsibilities:
 - Normalize column names and timestamps.
 - Save raw copies (for auditability) in /data/raw/.
 
 **4.2 Preprocessor:**
+
 Input: raw CSVs.
 Responsibilities:
 - Handle missing values (interpolate / forward-fill / drop as required).
@@ -73,6 +75,7 @@ Responsibilities:
 - Save processed dataset to /data/processed/.
 
 **4.3 Feature Engineer:**
+
 Input: processed dataset.
 Responsibilities:
 - Create rolling features: 7-day, 14-day, 30-day moving averages for volume & price.
@@ -83,6 +86,7 @@ Responsibilities:
 - Output files: engineered_features.csv, engineered_features_lag.csv.
 
 **4.4 Model Trainer:**
+
 Input: engineered features.
 Responsibilities:
 - Split data with time-series aware splitting (no future leakage).
@@ -91,12 +95,14 @@ Responsibilities:
 - Save training logs, hyperparameters, metrics.
 
 **4.5 Model Evaluator:**
+
 Input: trained models and holdout/test splits.
 Responsibilities:
 - Compute RMSE, MAE, R² and confusion matrix if class labels used (High/Medium/Low).
 - Generate evaluation plots: predicted vs actual, residuals over time.
 
 **4.6 API / UI:**
+
 Input: user CSV or tickers for live fetch.
 Responsibilities:
 - Accept input, run preprocessing & feature generation for input, call model, return prediction.
