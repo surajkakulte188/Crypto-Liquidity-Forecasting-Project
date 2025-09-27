@@ -38,9 +38,18 @@ This document describes the data processing and prediction pipeline for the Cryp
 
 ## 3. Pipeline Data Flow Diagram
 
-
+```mermaid
+flowchart LR
+    A["Raw CSVs (data/raw)"] --> B["Preprocess & Merge\n(clean + label)"]
+    B --> C["Feature Engineering\n(MAs, lags, returns, logs)"]
+    C --> D["Modeling & Selection\n(log-target)"]
+    D --> E["Export Best Model\n(artifacts/models)"]
+    C --> F["Evaluation & Plots\n(artifacts/metrics)"]
+    E --> G["Flask Inference (app.py)"]
+    G --> H["Web UI\n(templates + static)"]
+```
 ## 4. Folder Structure of Pipeline
-
+```
 crypto_liquidity_project/
 ├── data/
 │   ├── raw/
@@ -68,15 +77,16 @@ crypto_liquidity_project/
 └── reports/
     ├── EDA_REPORT.md
     └── FINAL_REPORT.md
-
+```
 ## 5. Notes
 - The pipeline is modular, making it easy to add new features or models.
 - Metrics and visualizations are stored separately for reproducibility and analysis.
 - Flask app provides a real-time inference interface, allowing the pipeline to be production-ready.
 
 ## 6. Run Commands
-
+```
 python -m venv .venv
 .venv\Scripts\activate
 pip install -r requirements.txt
 python app.py
+```
