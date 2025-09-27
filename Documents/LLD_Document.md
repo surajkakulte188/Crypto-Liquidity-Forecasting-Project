@@ -1,10 +1,10 @@
 # Low-Level Design (LLD) Document
 
 ## Document Version
-Project Name: Cryptocurrency Liquidity Prediction for Market Stability
-Prepared By: Suraj R. Kakulte
-Date: 27-Sep-2025
-Version: 1.0 
+- Project Name: Cryptocurrency Liquidity Prediction for Market Stability
+- Prepared By: Suraj R. Kakulte
+- Date: 27-Sep-2025
+- Version: 1.0 
 
 ## 1. Introduction
 This Low-Level Design document provides a detailed explanation of the Crypto Liquidity Forecasting project, including module-level architecture, data structures, algorithms, and implementation specifics. It acts as a blueprint for developers to implement the system.
